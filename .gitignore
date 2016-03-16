@@ -1,0 +1,7 @@
+node_modules/
+**.swp
+trec_eval/trec_eval
+*.iml
+.idea/
+data/db.json
+

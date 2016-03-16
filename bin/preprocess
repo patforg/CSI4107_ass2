@@ -1,0 +1,40 @@
+#!/usr/local/bin/node
+/**
+ * Preprocess, index and dumb into a json file
+ */
+var fs = require('fs');
+var config = require('../config.js');
+var app = require('../lib/app')(config);
+
+
+var startTime = new Date().getTime();
+
+app.preprocess(config, function (err) {
+    if (err) {
+        throw err;
+    } //if
+
+    db = app.db();
+
+    var totalTimeSec = (new Date().getTime() - startTime) / 1000;
+    console.log('Pre-processed '+ db.documentCount + ' documents.');
+    console.log('Dictionary contains '+ db.termCount +' terms.');
+    console.log('Took '+ totalTimeSec +' seconds');    
+    
+    /* 
+    // start indexing
+    app.indexer(function(err) {
+        
+        if (err) {
+            throw err;
+        } //if
+        console.log('Done indexing!');
+
+        // writefilesync.js
+        fs.writeFileSync(config.dbFile, JSON.stringify(db)); 
+    });
+    */
+
+    // writefilesync.js
+    fs.writeFileSync(config.dbFile, JSON.stringify(db)); 
+});
