@@ -1,0 +1,19 @@
+#!/usr/local/bin/node
+/**
+ * creates a bunchn of arff files
+ */
+var config = require('../config.js');
+var app = require('../lib/app')(config);
+
+
+var startTime = new Date().getTime();
+
+app.barff(config, function (err) {
+    if (err) {
+        throw err;
+    } //if
+
+    var totalTimeSec = (new Date().getTime() - startTime) / 1000;
+    console.log('Create all arff files');
+    
+});

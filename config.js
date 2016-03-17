@@ -1,5 +1,5 @@
 module.exports = {
     dbFile: __dirname + '/data/db.json',
-    resultsFile: __dirname + '/data/results.txt',
+    arffFilePath: __dirname + '/data',
     documentsFile: __dirname + '/data/tweets.txt'
 };
