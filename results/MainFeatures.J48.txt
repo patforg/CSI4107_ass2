@@ -1,0 +1,1084 @@
+
+=== Run information ===
+
+Scheme:weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     sentiment-weka.filters.unsupervised.attribute.Remove-R11
+Instances:    7210
+Attributes:   11
+              capitalizedWordCount
+              urlPresent
+              wellWritten
+              exclamation
+              maxDiffScore
+              question
+              negatingWords
+              neutralityWords
+              repeatingLetter
+              smileyScore
+              category
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+maxDiffScore <= 100.626
+|   maxDiffScore <= 99.58
+|   |   smileyScore <= 0
+|   |   |   urlPresent <= 0
+|   |   |   |   exclamation <= 0
+|   |   |   |   |   maxDiffScore <= 97.718
+|   |   |   |   |   |   capitalizedWordCount <= 3: negative (299.0/105.0)
+|   |   |   |   |   |   capitalizedWordCount > 3
+|   |   |   |   |   |   |   capitalizedWordCount <= 6
+|   |   |   |   |   |   |   |   neutralityWords <= 100
+|   |   |   |   |   |   |   |   |   wellWritten <= 0.583333: negative (6.0/1.0)
+|   |   |   |   |   |   |   |   |   wellWritten > 0.583333
+|   |   |   |   |   |   |   |   |   |   maxDiffScore <= 96.672: neutral (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   maxDiffScore > 96.672: negative (7.0/4.0)
+|   |   |   |   |   |   |   |   neutralityWords > 100: negative (2.0)
+|   |   |   |   |   |   |   capitalizedWordCount > 6: positive (3.0/1.0)
+|   |   |   |   |   maxDiffScore > 97.718
+|   |   |   |   |   |   neutralityWords <= 100
+|   |   |   |   |   |   |   question <= 0
+|   |   |   |   |   |   |   |   repeatingLetter <= 0
+|   |   |   |   |   |   |   |   |   capitalizedWordCount <= 4
+|   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 0: negative (142.0/77.0)
+|   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 0
+|   |   |   |   |   |   |   |   |   |   |   smileyScore <= -1: negative (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   smileyScore > -1
+|   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 99.484
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   neutralityWords <= 99
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 98.892
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.642857: negative (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.642857
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.724138: positive (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.724138
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   neutralityWords <= 98: positive (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   neutralityWords > 98
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 97.938: negative (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 97.938
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 98.564: neutral (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 98.564: negative (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 1: neutral (15.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 98.892
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.708333: objective (5.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.708333: positive (10.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   neutralityWords > 99
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.59375: positive (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.59375
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.673469
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.619048: neutral (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.619048
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 97.876: neutral (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 97.876: negative (11.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.673469
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.8
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.714286
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 99.08
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 98.172: negative (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 98.172
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.701754: positive (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.701754: objective (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 99.08: negative (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.714286
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 97.968: positive (3.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 97.968
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 98.28: negative (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 98.28
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 98.892: positive (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 98.892: negative (9.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.8: negative (33.0/21.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 98.406
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.74359
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.717949: positive (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.717949: neutral (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.74359: negative (5.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 98.406
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 99.406
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.8125
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 99.064: negative (6.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 99.064: positive (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.8125: positive (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 99.406: neutral (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.75
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 97.97: negative (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 97.97: objective (16.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.75
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 98.688: negative (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 98.688: positive (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 99.484: negative (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.722222: negative (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.722222
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 98.374: neutral (7.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 98.374
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 99.218: negative (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 99.218: positive (2.0/1.0)
+|   |   |   |   |   |   |   |   |   capitalizedWordCount > 4
+|   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 5
+|   |   |   |   |   |   |   |   |   |   |   neutralityWords <= 99: objective (2.0)
+|   |   |   |   |   |   |   |   |   |   |   neutralityWords > 99
+|   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.66
+|   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.633333: neutral (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.633333: negative (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.66: positive (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 5
+|   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 7: neutral (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 7: positive (3.0/1.0)
+|   |   |   |   |   |   |   |   repeatingLetter > 0
+|   |   |   |   |   |   |   |   |   wellWritten <= 0.604167: positive (4.0/2.0)
+|   |   |   |   |   |   |   |   |   wellWritten > 0.604167
+|   |   |   |   |   |   |   |   |   |   maxDiffScore <= 98.532
+|   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 1: positive (2.0)
+|   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 1: negative (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   maxDiffScore > 98.532: negative (6.0)
+|   |   |   |   |   |   |   question > 0
+|   |   |   |   |   |   |   |   wellWritten <= 0.74359
+|   |   |   |   |   |   |   |   |   wellWritten <= 0.625: neutral (16.0/6.0)
+|   |   |   |   |   |   |   |   |   wellWritten > 0.625
+|   |   |   |   |   |   |   |   |   |   neutralityWords <= 99
+|   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 99.282: neutral (2.0)
+|   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 99.282: negative (2.0)
+|   |   |   |   |   |   |   |   |   |   neutralityWords > 99: negative (15.0/5.0)
+|   |   |   |   |   |   |   |   wellWritten > 0.74359
+|   |   |   |   |   |   |   |   |   capitalizedWordCount <= 1: neutral (16.0/7.0)
+|   |   |   |   |   |   |   |   |   capitalizedWordCount > 1: positive (2.0)
+|   |   |   |   |   |   neutralityWords > 100
+|   |   |   |   |   |   |   neutralityWords <= 101
+|   |   |   |   |   |   |   |   capitalizedWordCount <= 1
+|   |   |   |   |   |   |   |   |   capitalizedWordCount <= 0
+|   |   |   |   |   |   |   |   |   |   wellWritten <= 0.777778: positive (2.0)
+|   |   |   |   |   |   |   |   |   |   wellWritten > 0.777778: negative (2.0)
+|   |   |   |   |   |   |   |   |   capitalizedWordCount > 0: negative (3.0/1.0)
+|   |   |   |   |   |   |   |   capitalizedWordCount > 1: positive (3.0)
+|   |   |   |   |   |   |   neutralityWords > 101
+|   |   |   |   |   |   |   |   wellWritten <= 0.763158: negative (3.0)
+|   |   |   |   |   |   |   |   wellWritten > 0.763158: positive (2.0/1.0)
+|   |   |   |   exclamation > 0
+|   |   |   |   |   question <= 1
+|   |   |   |   |   |   maxDiffScore <= 97.892
+|   |   |   |   |   |   |   capitalizedWordCount <= 5
+|   |   |   |   |   |   |   |   question <= 0: negative (70.0/29.0)
+|   |   |   |   |   |   |   |   question > 0
+|   |   |   |   |   |   |   |   |   wellWritten <= 0.766667: negative (3.0/1.0)
+|   |   |   |   |   |   |   |   |   wellWritten > 0.766667: positive (4.0/1.0)
+|   |   |   |   |   |   |   capitalizedWordCount > 5
+|   |   |   |   |   |   |   |   exclamation <= 3
+|   |   |   |   |   |   |   |   |   maxDiffScore <= 96.5: objective (2.0)
+|   |   |   |   |   |   |   |   |   maxDiffScore > 96.5: positive (2.0)
+|   |   |   |   |   |   |   |   exclamation > 3: negative (3.0)
+|   |   |   |   |   |   maxDiffScore > 97.892
+|   |   |   |   |   |   |   neutralityWords <= 98: neutral (4.0/1.0)
+|   |   |   |   |   |   |   neutralityWords > 98
+|   |   |   |   |   |   |   |   question <= 0
+|   |   |   |   |   |   |   |   |   repeatingLetter <= 1
+|   |   |   |   |   |   |   |   |   |   exclamation <= 1
+|   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.772727
+|   |   |   |   |   |   |   |   |   |   |   |   repeatingLetter <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   neutralityWords <= 99
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 98.25: negative (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 98.25: neutral (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   neutralityWords > 99
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.745763: positive (11.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.745763: negative (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 98.14
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.74359: neutral (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.74359: positive (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 98.14: positive (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 98.11: negative (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 98.11
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   neutralityWords <= 100
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.727273: neutral (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.727273: positive (5.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   neutralityWords > 100: negative (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   repeatingLetter > 0: positive (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.772727: positive (25.0/6.0)
+|   |   |   |   |   |   |   |   |   |   exclamation > 1
+|   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.633333: positive (9.0)
+|   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.633333
+|   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 98.612
+|   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.6875: neutral (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.6875: positive (13.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 98.612
+|   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 99.064: positive (10.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 99.064
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.809524: negative (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.809524: positive (4.0)
+|   |   |   |   |   |   |   |   |   repeatingLetter > 1: positive (3.0)
+|   |   |   |   |   |   |   |   question > 0
+|   |   |   |   |   |   |   |   |   wellWritten <= 0.85: negative (7.0/2.0)
+|   |   |   |   |   |   |   |   |   wellWritten > 0.85: positive (3.0)
+|   |   |   |   |   question > 1: negative (11.0/3.0)
+|   |   |   urlPresent > 0
+|   |   |   |   exclamation <= 1
+|   |   |   |   |   exclamation <= 0
+|   |   |   |   |   |   neutralityWords <= 99
+|   |   |   |   |   |   |   neutralityWords <= 98
+|   |   |   |   |   |   |   |   capitalizedWordCount <= 2: negative (8.0/2.0)
+|   |   |   |   |   |   |   |   capitalizedWordCount > 2
+|   |   |   |   |   |   |   |   |   wellWritten <= 0.666667: positive (2.0)
+|   |   |   |   |   |   |   |   |   wellWritten > 0.666667: neutral (2.0)
+|   |   |   |   |   |   |   neutralityWords > 98
+|   |   |   |   |   |   |   |   wellWritten <= 0.727273
+|   |   |   |   |   |   |   |   |   wellWritten <= 0.536585
+|   |   |   |   |   |   |   |   |   |   maxDiffScore <= 98.14: positive (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   maxDiffScore > 98.14: neutral (4.0)
+|   |   |   |   |   |   |   |   |   wellWritten > 0.536585
+|   |   |   |   |   |   |   |   |   |   maxDiffScore <= 94.266: neutral (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   maxDiffScore > 94.266: negative (14.0/3.0)
+|   |   |   |   |   |   |   |   wellWritten > 0.727273: neutral (8.0/2.0)
+|   |   |   |   |   |   neutralityWords > 99
+|   |   |   |   |   |   |   maxDiffScore <= 96.344: negative (57.0/29.0)
+|   |   |   |   |   |   |   maxDiffScore > 96.344
+|   |   |   |   |   |   |   |   maxDiffScore <= 98.596
+|   |   |   |   |   |   |   |   |   capitalizedWordCount <= 5
+|   |   |   |   |   |   |   |   |   |   question <= 0: objective (74.0/36.0)
+|   |   |   |   |   |   |   |   |   |   question > 0
+|   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 98.298: neutral (5.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 98.298: objective (2.0)
+|   |   |   |   |   |   |   |   |   capitalizedWordCount > 5
+|   |   |   |   |   |   |   |   |   |   maxDiffScore <= 97.952
+|   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.511628
+|   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.486486: negative (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.486486: positive (2.0)
+|   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.511628: negative (7.0/3.0)
+|   |   |   |   |   |   |   |   |   |   maxDiffScore > 97.952: objective (5.0)
+|   |   |   |   |   |   |   |   maxDiffScore > 98.596
+|   |   |   |   |   |   |   |   |   capitalizedWordCount <= 5
+|   |   |   |   |   |   |   |   |   |   question <= 0
+|   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 0: objective (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 0
+|   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.652174: positive (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.652174: neutral (12.0/7.0)
+|   |   |   |   |   |   |   |   |   |   question > 0: neutral (5.0/2.0)
+|   |   |   |   |   |   |   |   |   capitalizedWordCount > 5
+|   |   |   |   |   |   |   |   |   |   question <= 0
+|   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.625: neutral (2.0)
+|   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.625: negative (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   question > 0
+|   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.689655: negative (2.0)
+|   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.689655: neutral (2.0)
+|   |   |   |   |   exclamation > 0
+|   |   |   |   |   |   repeatingLetter <= 0
+|   |   |   |   |   |   |   wellWritten <= 0.8
+|   |   |   |   |   |   |   |   capitalizedWordCount <= 2: positive (12.0/4.0)
+|   |   |   |   |   |   |   |   capitalizedWordCount > 2
+|   |   |   |   |   |   |   |   |   wellWritten <= 0.666667: negative (10.0/5.0)
+|   |   |   |   |   |   |   |   |   wellWritten > 0.666667: objective (3.0)
+|   |   |   |   |   |   |   wellWritten > 0.8: neutral (2.0)
+|   |   |   |   |   |   repeatingLetter > 0: neutral (2.0)
+|   |   |   |   exclamation > 1: positive (14.0/3.0)
+|   |   smileyScore > 0: positive (43.0/12.0)
+|   maxDiffScore > 99.58
+|   |   exclamation <= 0
+|   |   |   smileyScore <= 0
+|   |   |   |   urlPresent <= 0
+|   |   |   |   |   neutralityWords <= 100
+|   |   |   |   |   |   capitalizedWordCount <= 5
+|   |   |   |   |   |   |   wellWritten <= 0.956522
+|   |   |   |   |   |   |   |   neutralityWords <= 99
+|   |   |   |   |   |   |   |   |   neutralityWords <= 98
+|   |   |   |   |   |   |   |   |   |   repeatingLetter <= 0
+|   |   |   |   |   |   |   |   |   |   |   neutralityWords <= 97: neutral (2.0)
+|   |   |   |   |   |   |   |   |   |   |   neutralityWords > 97
+|   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.312
+|   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.882353: negative (15.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.882353: positive (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.312
+|   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 0: neutral (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.84: neutral (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.84: negative (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   repeatingLetter > 0: positive (3.0/2.0)
+|   |   |   |   |   |   |   |   |   neutralityWords > 98
+|   |   |   |   |   |   |   |   |   |   question <= 0
+|   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.576923: neutral (8.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.576923
+|   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.608696
+|   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.034: objective (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.034: positive (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.608696
+|   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 2: neutral (134.0/85.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.653061: positive (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.653061
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.75
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.234: neutral (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.234: negative (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.75
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 99.83: positive (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 99.83: negative (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   question > 0
+|   |   |   |   |   |   |   |   |   |   |   question <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.142
+|   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.016
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 2: positive (5.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 2: neutral (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.016: objective (4.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.142
+|   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.745763
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.282: objective (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.282: neutral (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.745763: neutral (6.0)
+|   |   |   |   |   |   |   |   |   |   |   question > 1: positive (9.0/4.0)
+|   |   |   |   |   |   |   |   neutralityWords > 99
+|   |   |   |   |   |   |   |   |   maxDiffScore <= 99.842
+|   |   |   |   |   |   |   |   |   |   smileyScore <= -1: negative (4.0)
+|   |   |   |   |   |   |   |   |   |   smileyScore > -1
+|   |   |   |   |   |   |   |   |   |   |   repeatingLetter <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.633333: objective (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.633333
+|   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 99.764: positive (12.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 99.764: negative (7.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 99.64: objective (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 99.64
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 99.75: neutral (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 99.75: positive (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 99.798: negative (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 99.798: positive (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   repeatingLetter > 0: positive (2.0)
+|   |   |   |   |   |   |   |   |   maxDiffScore > 99.842
+|   |   |   |   |   |   |   |   |   |   question <= 0
+|   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   repeatingLetter <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.285714
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 99.938: objective (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 99.938: positive (12.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.285714
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 0: positive (269.0/191.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.156
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.004
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.611111
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 99.97: negative (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 99.97: positive (13.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.611111
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 99.92
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.724138: neutral (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.724138
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.844444: positive (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.844444: neutral (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 99.92: objective (39.0/19.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.004
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.048: positive (8.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.048: objective (29.0/14.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.156
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.408
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.611111: neutral (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.611111
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.701754
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.236: positive (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.236: negative (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.701754
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.344
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.823529
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.188: negative (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.188
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.296: neutral (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.296
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.733333: positive (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.733333: negative (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.823529
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.851852: objective (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.851852
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.903226: positive (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.903226: negative (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.344: neutral (4.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.408
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.47: positive (13.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.47: neutral (30.0/17.0)
+|   |   |   |   |   |   |   |   |   |   |   |   repeatingLetter > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 0: neutral (15.0/5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.03
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 99.952: positive (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 99.952: objective (4.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.03: negative (4.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 1
+|   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.046
+|   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   repeatingLetter <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.711864
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.004
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 99.986: negative (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 99.986
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.695652
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.682927
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.62963: objective (5.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.62963: neutral (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.682927: objective (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.695652: negative (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.004: neutral (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.711864
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 99.97
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.78125: objective (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.78125: positive (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 99.97: neutral (8.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.004: objective (21.0/10.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.004: negative (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   repeatingLetter > 0: positive (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.538462: neutral (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.538462: objective (20.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.046
+|   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   repeatingLetter <= 0: neutral (152.0/100.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   repeatingLetter > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.6: positive (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.6: negative (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.59375: objective (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.59375
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.358: negative (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.358: neutral (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   question > 0
+|   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.823529
+|   |   |   |   |   |   |   |   |   |   |   |   repeatingLetter <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   question <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.452
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.312
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.204
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.172: neutral (61.0/26.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.172: objective (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.204
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.666667
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.266: negative (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.266: neutral (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 0: negative (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.666667: positive (6.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.312
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.75: neutral (13.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.75: objective (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.452: positive (10.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 3: positive (3.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   question > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   question <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.722222: neutral (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.722222
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.174: positive (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.174: neutral (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.124: negative (7.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.124: objective (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.66: negative (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.66: neutral (7.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   question > 3: negative (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   repeatingLetter > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.615385: neutral (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.615385: negative (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.823529
+|   |   |   |   |   |   |   |   |   |   |   |   repeatingLetter <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.88
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.869565
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.046: negative (5.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.046: objective (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.869565: positive (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.436: negative (10.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.436: objective (4.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.88
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.896552: objective (5.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.896552
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.064: neutral (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.064
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.928571: objective (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.928571: positive (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   repeatingLetter > 0: objective (3.0)
+|   |   |   |   |   |   |   wellWritten > 0.956522: neutral (40.0/22.0)
+|   |   |   |   |   |   capitalizedWordCount > 5
+|   |   |   |   |   |   |   maxDiffScore <= 100.158: objective (22.0/3.0)
+|   |   |   |   |   |   |   maxDiffScore > 100.158
+|   |   |   |   |   |   |   |   capitalizedWordCount <= 8
+|   |   |   |   |   |   |   |   |   neutralityWords <= 99: positive (2.0)
+|   |   |   |   |   |   |   |   |   neutralityWords > 99
+|   |   |   |   |   |   |   |   |   |   wellWritten <= 0.424242: positive (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   wellWritten > 0.424242: objective (4.0/1.0)
+|   |   |   |   |   |   |   |   capitalizedWordCount > 8
+|   |   |   |   |   |   |   |   |   wellWritten <= 0.622642: positive (5.0)
+|   |   |   |   |   |   |   |   |   wellWritten > 0.622642: negative (2.0)
+|   |   |   |   |   neutralityWords > 100
+|   |   |   |   |   |   question <= 0: negative (24.0/8.0)
+|   |   |   |   |   |   question > 0: positive (4.0/1.0)
+|   |   |   |   urlPresent > 0
+|   |   |   |   |   neutralityWords <= 99
+|   |   |   |   |   |   neutralityWords <= 98
+|   |   |   |   |   |   |   capitalizedWordCount <= 1
+|   |   |   |   |   |   |   |   maxDiffScore <= 100.142: positive (2.0)
+|   |   |   |   |   |   |   |   maxDiffScore > 100.142: neutral (3.0/1.0)
+|   |   |   |   |   |   |   capitalizedWordCount > 1: objective (9.0/4.0)
+|   |   |   |   |   |   neutralityWords > 98
+|   |   |   |   |   |   |   capitalizedWordCount <= 3
+|   |   |   |   |   |   |   |   capitalizedWordCount <= 2
+|   |   |   |   |   |   |   |   |   maxDiffScore <= 100.048
+|   |   |   |   |   |   |   |   |   |   wellWritten <= 0.722222
+|   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 1: neutral (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 1: positive (4.0/2.0)
+|   |   |   |   |   |   |   |   |   |   wellWritten > 0.722222: objective (6.0/1.0)
+|   |   |   |   |   |   |   |   |   maxDiffScore > 100.048
+|   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.486: neutral (22.0/4.0)
+|   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.486
+|   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.689655: positive (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.689655: neutral (3.0/1.0)
+|   |   |   |   |   |   |   |   capitalizedWordCount > 2
+|   |   |   |   |   |   |   |   |   wellWritten <= 0.595745: negative (3.0)
+|   |   |   |   |   |   |   |   |   wellWritten > 0.595745: objective (3.0/1.0)
+|   |   |   |   |   |   |   capitalizedWordCount > 3
+|   |   |   |   |   |   |   |   wellWritten <= 0.666667
+|   |   |   |   |   |   |   |   |   capitalizedWordCount <= 4: objective (7.0/3.0)
+|   |   |   |   |   |   |   |   |   capitalizedWordCount > 4
+|   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 6
+|   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.625: neutral (3.0)
+|   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.625: objective (2.0)
+|   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 6: objective (3.0/1.0)
+|   |   |   |   |   |   |   |   wellWritten > 0.666667
+|   |   |   |   |   |   |   |   |   maxDiffScore <= 100.344: positive (2.0)
+|   |   |   |   |   |   |   |   |   maxDiffScore > 100.344: neutral (2.0)
+|   |   |   |   |   neutralityWords > 99
+|   |   |   |   |   |   question <= 0
+|   |   |   |   |   |   |   capitalizedWordCount <= 4
+|   |   |   |   |   |   |   |   maxDiffScore <= 100.44
+|   |   |   |   |   |   |   |   |   maxDiffScore <= 100.092
+|   |   |   |   |   |   |   |   |   |   repeatingLetter <= 0
+|   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 99.906
+|   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 0: positive (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 99.876: objective (9.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 99.876
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 99.89: positive (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 99.89: objective (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 2: positive (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 3: neutral (6.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 99.906
+|   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.769231
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.64
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.016: objective (7.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.016: neutral (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.64: objective (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 0: objective (20.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.769231
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.034
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 99.986: neutral (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 99.986
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.002: positive (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.002: objective (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.034: neutral (5.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 1: neutral (18.0/8.0)
+|   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.578947
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.016: neutral (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.016: objective (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.578947: objective (18.0/7.0)
+|   |   |   |   |   |   |   |   |   |   repeatingLetter > 0
+|   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 1: positive (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 1: neutral (2.0)
+|   |   |   |   |   |   |   |   |   maxDiffScore > 100.092
+|   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.108: objective (6.0)
+|   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.108
+|   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.328
+|   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.56: positive (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.56
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.714286
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.676471
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.633333: objective (10.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.633333
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.236: objective (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.236: neutral (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 0: neutral (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.676471: objective (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.714286
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.234
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.772727
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.75: neutral (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.75: positive (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.772727: objective (5.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.234: positive (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.689655: objective (16.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.689655
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.158: positive (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.158: neutral (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.5: neutral (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.5
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.645161
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.282: objective (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.282: positive (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.645161
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.686275: neutral (4.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.686275: positive (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.689655
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.607143
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.567901: neutral (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.567901: positive (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.607143: neutral (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.689655: objective (2.0)
+|   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.328
+|   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.424: neutral (25.0/9.0)
+|   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.424: objective (5.0/1.0)
+|   |   |   |   |   |   |   |   maxDiffScore > 100.44
+|   |   |   |   |   |   |   |   |   wellWritten <= 0.666667
+|   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.562
+|   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.468
+|   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 3: positive (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 3: objective (2.0)
+|   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.468
+|   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.548: objective (10.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.548: neutral (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 2: neutral (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.562
+|   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.555556: negative (2.0)
+|   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.555556: positive (2.0)
+|   |   |   |   |   |   |   |   |   wellWritten > 0.666667
+|   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 1
+|   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.58: objective (5.0)
+|   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.58: negative (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 1
+|   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.714286
+|   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.697674: negative (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.697674: neutral (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.714286: objective (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 2
+|   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.546: negative (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.546: neutral (2.0)
+|   |   |   |   |   |   |   capitalizedWordCount > 4
+|   |   |   |   |   |   |   |   capitalizedWordCount <= 8
+|   |   |   |   |   |   |   |   |   wellWritten <= 0.514286: objective (18.0/2.0)
+|   |   |   |   |   |   |   |   |   wellWritten > 0.514286
+|   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.236
+|   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.633333
+|   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 99.64: positive (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 99.64
+|   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.096: neutral (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.096: objective (3.0)
+|   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.633333: objective (8.0/1.0)
+|   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.236
+|   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.3
+|   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.642857: negative (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.642857: neutral (2.0)
+|   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.3
+|   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 6: objective (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 6: neutral (4.0/2.0)
+|   |   |   |   |   |   |   |   capitalizedWordCount > 8: neutral (7.0/2.0)
+|   |   |   |   |   |   question > 0
+|   |   |   |   |   |   |   capitalizedWordCount <= 0
+|   |   |   |   |   |   |   |   question <= 1: negative (2.0)
+|   |   |   |   |   |   |   |   question > 1: positive (2.0)
+|   |   |   |   |   |   |   capitalizedWordCount > 0
+|   |   |   |   |   |   |   |   question <= 1
+|   |   |   |   |   |   |   |   |   capitalizedWordCount <= 6
+|   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 3
+|   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.126
+|   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 1: positive (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 1: neutral (6.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.126
+|   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.376: negative (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.376: objective (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 3: objective (9.0/2.0)
+|   |   |   |   |   |   |   |   |   capitalizedWordCount > 6: neutral (3.0/1.0)
+|   |   |   |   |   |   |   |   question > 1: objective (3.0/1.0)
+|   |   |   smileyScore > 0
+|   |   |   |   smileyScore <= 1
+|   |   |   |   |   urlPresent <= 0
+|   |   |   |   |   |   maxDiffScore <= 100.544
+|   |   |   |   |   |   |   question <= 0
+|   |   |   |   |   |   |   |   capitalizedWordCount <= 1
+|   |   |   |   |   |   |   |   |   wellWritten <= 0.774194: positive (10.0/3.0)
+|   |   |   |   |   |   |   |   |   wellWritten > 0.774194: neutral (4.0/2.0)
+|   |   |   |   |   |   |   |   capitalizedWordCount > 1
+|   |   |   |   |   |   |   |   |   wellWritten <= 0.666667: neutral (6.0/2.0)
+|   |   |   |   |   |   |   |   |   wellWritten > 0.666667
+|   |   |   |   |   |   |   |   |   |   maxDiffScore <= 99.782: neutral (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   maxDiffScore > 99.782: positive (11.0/2.0)
+|   |   |   |   |   |   |   question > 0
+|   |   |   |   |   |   |   |   wellWritten <= 0.611111
+|   |   |   |   |   |   |   |   |   capitalizedWordCount <= 1: positive (4.0/1.0)
+|   |   |   |   |   |   |   |   |   capitalizedWordCount > 1: negative (2.0)
+|   |   |   |   |   |   |   |   wellWritten > 0.611111: neutral (14.0/5.0)
+|   |   |   |   |   |   maxDiffScore > 100.544: positive (9.0/1.0)
+|   |   |   |   |   urlPresent > 0: positive (2.0/1.0)
+|   |   |   |   smileyScore > 1: positive (8.0/2.0)
+|   |   exclamation > 0
+|   |   |   smileyScore <= 0
+|   |   |   |   question <= 0
+|   |   |   |   |   urlPresent <= 0
+|   |   |   |   |   |   repeatingLetter <= 0
+|   |   |   |   |   |   |   neutralityWords <= 99
+|   |   |   |   |   |   |   |   neutralityWords <= 98: positive (5.0/1.0)
+|   |   |   |   |   |   |   |   neutralityWords > 98
+|   |   |   |   |   |   |   |   |   maxDiffScore <= 100.468
+|   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.11
+|   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.709677: positive (9.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.709677
+|   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.034
+|   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 0: neutral (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 0: negative (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.034: positive (4.0/2.0)
+|   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.11
+|   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.25: negative (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.25: positive (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 0: negative (5.0)
+|   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 1: positive (5.0/2.0)
+|   |   |   |   |   |   |   |   |   maxDiffScore > 100.468: positive (8.0/2.0)
+|   |   |   |   |   |   |   neutralityWords > 99
+|   |   |   |   |   |   |   |   capitalizedWordCount <= 1
+|   |   |   |   |   |   |   |   |   maxDiffScore <= 99.72
+|   |   |   |   |   |   |   |   |   |   wellWritten <= 0.758621: negative (3.0)
+|   |   |   |   |   |   |   |   |   |   wellWritten > 0.758621: neutral (2.0/1.0)
+|   |   |   |   |   |   |   |   |   maxDiffScore > 99.72
+|   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 0
+|   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.08
+|   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.048: positive (33.0/14.0)
+|   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.048: objective (3.0)
+|   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.08: positive (64.0/24.0)
+|   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 0
+|   |   |   |   |   |   |   |   |   |   |   exclamation <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   smileyScore <= -1: negative (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   smileyScore > -1
+|   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.28
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 99.986: positive (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 99.986
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.625
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.590909: neutral (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.590909: objective (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.625
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.763158
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.675: positive (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.675: objective (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.763158: neutral (8.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.28
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.675: positive (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.675
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.818182
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.772727: negative (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.772727: neutral (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.818182: positive (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   exclamation > 1
+|   |   |   |   |   |   |   |   |   |   |   |   neutralityWords <= 100: positive (29.0/7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   neutralityWords > 100: negative (2.0/1.0)
+|   |   |   |   |   |   |   |   capitalizedWordCount > 1
+|   |   |   |   |   |   |   |   |   exclamation <= 1
+|   |   |   |   |   |   |   |   |   |   wellWritten <= 0.52: objective (8.0/2.0)
+|   |   |   |   |   |   |   |   |   |   wellWritten > 0.52
+|   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 6
+|   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 2: positive (21.0/11.0)
+|   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 99.766: positive (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 99.766
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.034
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 99.968: neutral (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 99.968: positive (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.034
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.625: objective (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.625: negative (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.586957: neutral (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.586957
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.686275: positive (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.686275: objective (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 4
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.046: negative (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.046: neutral (2.0)
+|   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 6: positive (3.0/1.0)
+|   |   |   |   |   |   |   |   |   exclamation > 1
+|   |   |   |   |   |   |   |   |   |   exclamation <= 5
+|   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.619048
+|   |   |   |   |   |   |   |   |   |   |   |   exclamation <= 3
+|   |   |   |   |   |   |   |   |   |   |   |   |   exclamation <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.55: positive (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.55: neutral (4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   exclamation > 2: neutral (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   exclamation > 3: positive (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.619048
+|   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.689655: objective (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.689655: positive (7.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 2
+|   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.777778: positive (16.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.777778
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.807692: neutral (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.807692: positive (2.0)
+|   |   |   |   |   |   |   |   |   |   exclamation > 5: objective (2.0)
+|   |   |   |   |   |   repeatingLetter > 0
+|   |   |   |   |   |   |   maxDiffScore <= 100.456
+|   |   |   |   |   |   |   |   wellWritten <= 0.709677
+|   |   |   |   |   |   |   |   |   wellWritten <= 0.552632
+|   |   |   |   |   |   |   |   |   |   exclamation <= 1: neutral (4.0)
+|   |   |   |   |   |   |   |   |   |   exclamation > 1
+|   |   |   |   |   |   |   |   |   |   |   exclamation <= 9: positive (6.0)
+|   |   |   |   |   |   |   |   |   |   |   exclamation > 9: neutral (3.0/1.0)
+|   |   |   |   |   |   |   |   |   wellWritten > 0.552632: positive (9.0)
+|   |   |   |   |   |   |   |   wellWritten > 0.709677
+|   |   |   |   |   |   |   |   |   maxDiffScore <= 100.046: positive (3.0/1.0)
+|   |   |   |   |   |   |   |   |   maxDiffScore > 100.046
+|   |   |   |   |   |   |   |   |   |   wellWritten <= 0.736842: negative (2.0)
+|   |   |   |   |   |   |   |   |   |   wellWritten > 0.736842: neutral (5.0/1.0)
+|   |   |   |   |   |   |   maxDiffScore > 100.456: positive (8.0/1.0)
+|   |   |   |   |   urlPresent > 0
+|   |   |   |   |   |   maxDiffScore <= 100.548
+|   |   |   |   |   |   |   neutralityWords <= 99
+|   |   |   |   |   |   |   |   wellWritten <= 0.584906: neutral (3.0)
+|   |   |   |   |   |   |   |   wellWritten > 0.584906
+|   |   |   |   |   |   |   |   |   maxDiffScore <= 100.142
+|   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.034: positive (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.034: objective (2.0)
+|   |   |   |   |   |   |   |   |   maxDiffScore > 100.142: positive (6.0/2.0)
+|   |   |   |   |   |   |   neutralityWords > 99
+|   |   |   |   |   |   |   |   exclamation <= 2
+|   |   |   |   |   |   |   |   |   wellWritten <= 0.575758
+|   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 6
+|   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.541667
+|   |   |   |   |   |   |   |   |   |   |   |   exclamation <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.464286
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 99.796: objective (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 99.796: neutral (6.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.464286
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 1: positive (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 1: objective (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   exclamation > 1: objective (2.0)
+|   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.541667: neutral (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 6: objective (4.0/1.0)
+|   |   |   |   |   |   |   |   |   wellWritten > 0.575758: positive (34.0/11.0)
+|   |   |   |   |   |   |   |   exclamation > 2: positive (15.0/3.0)
+|   |   |   |   |   |   maxDiffScore > 100.548: objective (5.0)
+|   |   |   |   question > 0
+|   |   |   |   |   repeatingLetter <= 1
+|   |   |   |   |   |   wellWritten <= 0.434783: positive (7.0/1.0)
+|   |   |   |   |   |   wellWritten > 0.434783
+|   |   |   |   |   |   |   repeatingLetter <= 0
+|   |   |   |   |   |   |   |   exclamation <= 3
+|   |   |   |   |   |   |   |   |   wellWritten <= 0.527778
+|   |   |   |   |   |   |   |   |   |   urlPresent <= 0: neutral (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   urlPresent > 0: objective (3.0)
+|   |   |   |   |   |   |   |   |   wellWritten > 0.527778
+|   |   |   |   |   |   |   |   |   |   exclamation <= 1
+|   |   |   |   |   |   |   |   |   |   |   question <= 2
+|   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 99.83
+|   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.731707: negative (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.731707: positive (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 99.83
+|   |   |   |   |   |   |   |   |   |   |   |   |   neutralityWords <= 99: neutral (7.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   neutralityWords > 99
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   urlPresent <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.78125: neutral (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.78125: positive (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 0: neutral (9.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   urlPresent > 0: positive (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   question > 2: negative (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   exclamation > 1
+|   |   |   |   |   |   |   |   |   |   |   neutralityWords <= 99: negative (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   neutralityWords > 99
+|   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 99.924: positive (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 99.924: neutral (10.0/2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 1: negative (7.0/4.0)
+|   |   |   |   |   |   |   |   exclamation > 3
+|   |   |   |   |   |   |   |   |   maxDiffScore <= 100.394: positive (2.0)
+|   |   |   |   |   |   |   |   |   maxDiffScore > 100.394: objective (2.0)
+|   |   |   |   |   |   |   repeatingLetter > 0: positive (4.0/2.0)
+|   |   |   |   |   repeatingLetter > 1: negative (2.0)
+|   |   |   smileyScore > 0: positive (28.0/3.0)
+maxDiffScore > 100.626
+|   smileyScore <= 0
+|   |   maxDiffScore <= 102.532
+|   |   |   urlPresent <= 0
+|   |   |   |   exclamation <= 0
+|   |   |   |   |   question <= 0: positive (862.0/431.0)
+|   |   |   |   |   question > 0
+|   |   |   |   |   |   repeatingLetter <= 0
+|   |   |   |   |   |   |   neutralityWords <= 100
+|   |   |   |   |   |   |   |   wellWritten <= 0.76087
+|   |   |   |   |   |   |   |   |   capitalizedWordCount <= 0
+|   |   |   |   |   |   |   |   |   |   maxDiffScore <= 101.234
+|   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.812: negative (2.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.812
+|   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 101.062: neutral (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 101.062: positive (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   maxDiffScore > 101.234
+|   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.727273: neutral (14.0/6.0)
+|   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.727273: objective (5.0/2.0)
+|   |   |   |   |   |   |   |   |   capitalizedWordCount > 0
+|   |   |   |   |   |   |   |   |   |   question <= 1
+|   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 101.08
+|   |   |   |   |   |   |   |   |   |   |   |   neutralityWords <= 99
+|   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.72: positive (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.72: neutral (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   neutralityWords > 99
+|   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 100.86: neutral (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 100.86: negative (5.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 101.08
+|   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 102.36
+|   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.576923: objective (6.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.576923
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.72973: positive (13.0/4.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.72973: objective (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 102.36: neutral (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   question > 1
+|   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.681818
+|   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 101.78: neutral (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 101.78: negative (2.0)
+|   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.681818: objective (2.0)
+|   |   |   |   |   |   |   |   wellWritten > 0.76087
+|   |   |   |   |   |   |   |   |   question <= 1
+|   |   |   |   |   |   |   |   |   |   neutralityWords <= 99
+|   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 0
+|   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.8125: negative (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.8125: neutral (2.0)
+|   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 0
+|   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 1
+|   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 101.688: negative (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 101.688: positive (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 1: negative (3.0/1.0)
+|   |   |   |   |   |   |   |   |   |   neutralityWords > 99: neutral (26.0/12.0)
+|   |   |   |   |   |   |   |   |   question > 1
+|   |   |   |   |   |   |   |   |   |   maxDiffScore <= 102.096: positive (5.0/2.0)
+|   |   |   |   |   |   |   |   |   |   maxDiffScore > 102.096: negative (2.0)
+|   |   |   |   |   |   |   neutralityWords > 100: positive (5.0/2.0)
+|   |   |   |   |   |   repeatingLetter > 0
+|   |   |   |   |   |   |   capitalizedWordCount <= 1
+|   |   |   |   |   |   |   |   maxDiffScore <= 102.078: negative (3.0)
+|   |   |   |   |   |   |   |   maxDiffScore > 102.078: positive (2.0/1.0)
+|   |   |   |   |   |   |   capitalizedWordCount > 1: positive (3.0)
+|   |   |   |   exclamation > 0
+|   |   |   |   |   question <= 1: positive (425.0/128.0)
+|   |   |   |   |   question > 1
+|   |   |   |   |   |   exclamation <= 2
+|   |   |   |   |   |   |   capitalizedWordCount <= 0: neutral (3.0/1.0)
+|   |   |   |   |   |   |   capitalizedWordCount > 0
+|   |   |   |   |   |   |   |   capitalizedWordCount <= 1: negative (2.0)
+|   |   |   |   |   |   |   |   capitalizedWordCount > 1
+|   |   |   |   |   |   |   |   |   maxDiffScore <= 102.312: positive (3.0)
+|   |   |   |   |   |   |   |   |   maxDiffScore > 102.312: negative (2.0)
+|   |   |   |   |   |   exclamation > 2: neutral (4.0/1.0)
+|   |   |   urlPresent > 0
+|   |   |   |   exclamation <= 0
+|   |   |   |   |   neutralityWords <= 98
+|   |   |   |   |   |   capitalizedWordCount <= 1: negative (3.0/1.0)
+|   |   |   |   |   |   capitalizedWordCount > 1: neutral (5.0/1.0)
+|   |   |   |   |   neutralityWords > 98
+|   |   |   |   |   |   question <= 0
+|   |   |   |   |   |   |   maxDiffScore <= 101.642
+|   |   |   |   |   |   |   |   neutralityWords <= 99
+|   |   |   |   |   |   |   |   |   capitalizedWordCount <= 2: positive (9.0/4.0)
+|   |   |   |   |   |   |   |   |   capitalizedWordCount > 2: objective (6.0/2.0)
+|   |   |   |   |   |   |   |   neutralityWords > 99: objective (120.0/75.0)
+|   |   |   |   |   |   |   maxDiffScore > 101.642: positive (79.0/41.0)
+|   |   |   |   |   |   question > 0
+|   |   |   |   |   |   |   capitalizedWordCount <= 0: objective (4.0/1.0)
+|   |   |   |   |   |   |   capitalizedWordCount > 0
+|   |   |   |   |   |   |   |   capitalizedWordCount <= 5
+|   |   |   |   |   |   |   |   |   neutralityWords <= 99
+|   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 1: neutral (2.0)
+|   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 1: positive (5.0/1.0)
+|   |   |   |   |   |   |   |   |   neutralityWords > 99
+|   |   |   |   |   |   |   |   |   |   wellWritten <= 0.552632: neutral (5.0/2.0)
+|   |   |   |   |   |   |   |   |   |   wellWritten > 0.552632
+|   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.71875: positive (8.0/3.0)
+|   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.71875: negative (2.0)
+|   |   |   |   |   |   |   |   capitalizedWordCount > 5
+|   |   |   |   |   |   |   |   |   capitalizedWordCount <= 6: positive (2.0)
+|   |   |   |   |   |   |   |   |   capitalizedWordCount > 6: objective (3.0/1.0)
+|   |   |   |   exclamation > 0
+|   |   |   |   |   exclamation <= 1
+|   |   |   |   |   |   question <= 1
+|   |   |   |   |   |   |   neutralityWords <= 99
+|   |   |   |   |   |   |   |   maxDiffScore <= 101.08: neutral (2.0)
+|   |   |   |   |   |   |   |   maxDiffScore > 101.08: positive (4.0/2.0)
+|   |   |   |   |   |   |   neutralityWords > 99
+|   |   |   |   |   |   |   |   wellWritten <= 0.714286
+|   |   |   |   |   |   |   |   |   wellWritten <= 0.653061
+|   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 2
+|   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 101.874: positive (9.0)
+|   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 101.874
+|   |   |   |   |   |   |   |   |   |   |   |   wellWritten <= 0.584906: positive (2.0)
+|   |   |   |   |   |   |   |   |   |   |   |   wellWritten > 0.584906: objective (2.0)
+|   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 2
+|   |   |   |   |   |   |   |   |   |   |   maxDiffScore <= 101.268: objective (4.0/1.0)
+|   |   |   |   |   |   |   |   |   |   |   maxDiffScore > 101.268: positive (9.0/2.0)
+|   |   |   |   |   |   |   |   |   wellWritten > 0.653061
+|   |   |   |   |   |   |   |   |   |   capitalizedWordCount <= 5: objective (12.0/3.0)
+|   |   |   |   |   |   |   |   |   |   capitalizedWordCount > 5: positive (2.0/1.0)
+|   |   |   |   |   |   |   |   wellWritten > 0.714286
+|   |   |   |   |   |   |   |   |   capitalizedWordCount <= 2: positive (15.0/3.0)
+|   |   |   |   |   |   |   |   |   capitalizedWordCount > 2: neutral (3.0)
+|   |   |   |   |   |   question > 1: positive (2.0)
+|   |   |   |   |   exclamation > 1: positive (27.0/6.0)
+|   |   maxDiffScore > 102.532: positive (1339.0/319.0)
+|   smileyScore > 0: positive (304.0/28.0)
+
+Number of Leaves  : 	512
+
+Size of the tree : 	1023
+
+
+Time taken to build model: 0.99 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3596               49.8752 %
+Incorrectly Classified Instances      3614               50.1248 %
+Kappa statistic                          0.2412
+Mean absolute error                      0.2928
+Root mean squared error                  0.4237
+Relative absolute error                 84.5544 %
+Root relative squared error            101.8422 %
+Total Number of Instances             7210     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.764     0.42       0.603     0.764     0.674      0.719    positive
+                 0.36      0.11       0.416     0.36      0.386      0.666    negative
+                 0.2       0.131      0.295     0.2       0.238      0.55     neutral
+                 0.291     0.094      0.359     0.291     0.321      0.668    objective
+Weighted Avg.    0.499     0.253      0.466     0.499     0.475      0.666
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+ 2503  282  274  216 |    a = positive
+  494  463  224  106 |    b = negative
+  736  249  309  251 |    c = neutral
+  421  119  242  321 |    d = objective
+

@@ -1,7 +1,7 @@
 # CSI4107_ass2
 Sentiment analysis of Twitter messages - CSI 4107 Assignement 2
 
-Please see the [Results Page](results/README.md)
+Please see the [Results Page](results/README.md) for results on different features and classifiers.
 
 ## Running the program
 1. install node.js

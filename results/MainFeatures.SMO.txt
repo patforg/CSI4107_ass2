@@ -1,0 +1,174 @@
+
+=== Run information ===
+
+Scheme:weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -C 250007 -E 1.0"
+Relation:     sentiment-weka.filters.unsupervised.attribute.Remove-R11
+Instances:    7210
+Attributes:   11
+              capitalizedWordCount
+              urlPresent
+              wellWritten
+              exclamation
+              maxDiffScore
+              question
+              negatingWords
+              neutralityWords
+              repeatingLetter
+              smileyScore
+              category
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: positive, negative
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.6395 * (normalized) capitalizedWordCount
+ +      -0.3121 * (normalized) urlPresent
+ +       0.4783 * (normalized) wellWritten
+ +      -4.2251 * (normalized) exclamation
+ +      -8.368  * (normalized) maxDiffScore
+ +       1.7184 * (normalized) question
+ +      -0.43   * (normalized) neutralityWords
+ +       0.5498 * (normalized) repeatingLetter
+ +      -4.3313 * (normalized) smileyScore
+ +       5.1874
+
+Number of kernel evaluations: 338881 (70.776% cached)
+
+Classifier for classes: positive, neutral
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0031 * (normalized) capitalizedWordCount
+ +       0.0009 * (normalized) urlPresent
+ +       0.0007 * (normalized) wellWritten
+ +      -0.0156 * (normalized) exclamation
+ +      -0.0206 * (normalized) maxDiffScore
+ +       0.011  * (normalized) question
+ +      -0.0068 * (normalized) neutralityWords
+ +      -0.0006 * (normalized) repeatingLetter
+ +      -0.017  * (normalized) smileyScore
+ -       0.9791
+
+Number of kernel evaluations: 962570 (76.758% cached)
+
+Classifier for classes: positive, objective
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.2494 * (normalized) capitalizedWordCount
+ +       0.1057 * (normalized) urlPresent
+ +      -0.0396 * (normalized) wellWritten
+ +      -0.992  * (normalized) exclamation
+ +      -0.7173 * (normalized) maxDiffScore
+ +      -0.0097 * (normalized) question
+ +       0.1584 * (normalized) neutralityWords
+ +      -0.098  * (normalized) repeatingLetter
+ +      -0.4319 * (normalized) smileyScore
+ -       0.5041
+
+Number of kernel evaluations: 1137623 (75.419% cached)
+
+Classifier for classes: negative, neutral
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -0.6256 * (normalized) capitalizedWordCount
+ +       0.7274 * (normalized) urlPresent
+ +      -0.7834 * (normalized) wellWritten
+ +       1.6007 * (normalized) exclamation
+ +       7.7781 * (normalized) maxDiffScore
+ +       0.7052 * (normalized) question
+ +      -0.8992 * (normalized) neutralityWords
+ +      -1.9494 * (normalized) repeatingLetter
+ +       3.237  * (normalized) smileyScore
+ -       3.9229
+
+Number of kernel evaluations: 248020 (63.983% cached)
+
+Classifier for classes: negative, objective
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0014 * (normalized) capitalizedWordCount
+ +       1.9991 * (normalized) urlPresent
+ +       0      * (normalized) wellWritten
+ +       0.0001 * (normalized) exclamation
+ +       0.0033 * (normalized) maxDiffScore
+ +       0.0002 * (normalized) question
+ +       0.0012 * (normalized) neutralityWords
+ +      -0.0022 * (normalized) repeatingLetter
+ +       0.0101 * (normalized) smileyScore
+ -       1.0062
+
+Number of kernel evaluations: 674305 (59.747% cached)
+
+Classifier for classes: neutral, objective
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+         0.0023 * (normalized) capitalizedWordCount
+ +       1.9997 * (normalized) urlPresent
+ +      -0.0001 * (normalized) wellWritten
+ +      -0.0017 * (normalized) exclamation
+ +      -0.0015 * (normalized) maxDiffScore
+ +      -0.0006 * (normalized) question
+ +       0      * (normalized) neutralityWords
+ +       0.0005 * (normalized) repeatingLetter
+ +      -0.0015 * (normalized) smileyScore
+ -       0.9986
+
+Number of kernel evaluations: 652508 (62.796% cached)
+
+
+
+Time taken to build model: 2.21 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3474               48.1831 %
+Incorrectly Classified Instances      3736               51.8169 %
+Kappa statistic                          0.0845
+Mean absolute error                      0.3257
+Root mean squared error                  0.4154
+Relative absolute error                 94.0663 %
+Root relative squared error             99.8405 %
+Total Number of Instances             7210     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.972     0.889      0.476     0.972     0.639      0.554    positive
+                 0.226     0.04       0.551     0.226     0.321      0.681    negative
+                 0         0          0         0         0          0.483    neutral
+                 0         0          0         0         0          0.615    objective
+Weighted Avg.    0.482     0.411      0.315     0.482     0.348      0.571
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+ 3183   91    0    1 |    a = positive
+  996  291    0    0 |    b = negative
+ 1440  105    0    0 |    c = neutral
+ 1062   41    0    0 |    d = objective
+

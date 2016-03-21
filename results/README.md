@@ -30,6 +30,48 @@ Average Scores:
 * Recall 0.48
 * F-Score 0.383
 
+## MainFeatures
+
+Features enabled were:
+* CapitalizedWordCount
+* urlPresent
+* wellWritten
+* exclamation
+* maxDiffScore
+* question
+* negatingWords
+* neutralityWords
+* repeatingLetter
+* smileyScore
+
+### SMO Classifier
+Used standard settings
+Average Scores:
+* Precision 0.315
+* Recall 0.482
+* F-Score 0.348
+
+### J48 Classifier
+Used standard settings
+Average Scores:
+* Precision 0.466
+* Recall 0.499
+* F-Score 0.475
+
+### NaiveBayes Classifier
+Used standard settings
+Average Scores:
+* Precision 0.502
+* Recall 0.502
+* F-Score 0.49
+
+### DecisionTable Classifier
+Used standard settings
+Average Scores:
+* Precision 0.505
+* Recall 0.531
+* F-Score 0.511
+
 ## BOW_w_features
 Used StringToWordVector filter to transform the sentence feature to a vector of words.
 
