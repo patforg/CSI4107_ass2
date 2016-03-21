@@ -1,0 +1,57 @@
+
+=== Run information ===
+
+Scheme:weka.classifiers.rules.DecisionTable -X 1 -S "weka.attributeSelection.BestFirst -D 1 -N 5"
+Relation:     sentiment-weka.filters.unsupervised.attribute.StringToWordVector-R11-P_-W100-prune-rate-1.0-I-N0-S-stemmerweka.core.stemmers.LovinsStemmer-M1-tokenizerweka.core.tokenizers.WordTokenizer -delimiters " \r \t.,;:\'\"()?!@#"
+Instances:    7210
+Attributes:   181
+[list of attributes omitted]
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Table:
+
+Number of training instances: 7210
+Number of Rules : 540
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 3255
+	Merit of best subset found:   54.494
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 4,5,6,10,32,39,47,54,55,61,103,116,147,181,11
+
+Time taken to build model: 51.46 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3838               53.2316 %
+Incorrectly Classified Instances      3372               46.7684 %
+Kappa statistic                          0.2879
+Mean absolute error                      0.3115
+Root mean squared error                  0.3912
+Relative absolute error                 89.9621 %
+Root relative squared error             94.0141 %
+Total Number of Instances             7210     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.808     0.392      0.632     0.808     0.709      0.757    positive
+                 0.356     0.083      0.484     0.356     0.41       0.72     negative
+                 0.284     0.17       0.314     0.284     0.298      0.619    neutral
+                 0.267     0.062      0.437     0.267     0.332      0.736    objective
+Weighted Avg.    0.532     0.239      0.507     0.532     0.51       0.718
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+ 2646  183  334  112 |    a = positive
+  481  458  287   61 |    b = negative
+  690  209  439  207 |    c = neutral
+  371   97  340  295 |    d = objective
+

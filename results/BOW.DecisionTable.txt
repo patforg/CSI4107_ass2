@@ -1,0 +1,57 @@
+
+=== Run information ===
+
+Scheme:weka.classifiers.rules.DecisionTable -X 1 -S "weka.attributeSelection.BestFirst -D 1 -N 5"
+Relation:     sentiment-weka.filters.unsupervised.attribute.StringToWordVector-R11-P_-W100-prune-rate-1.0-I-N0-S-stemmerweka.core.stemmers.LovinsStemmer-M1-tokenizerweka.core.tokenizers.WordTokenizer -delimiters " \r \t.,;:\'\"()?!#"-weka.filters.unsupervised.attribute.Remove-R1-10
+Instances:    7210
+Attributes:   170
+[list of attributes omitted]
+Test mode:10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+Decision Table:
+
+Number of training instances: 7210
+Number of Rules : 240
+Non matches covered by Majority class.
+	Best first.
+	Start set: no attributes
+	Search direction: forward
+	Stale search after 5 node expansions
+	Total number of subsets evaluated: 4917
+	Merit of best subset found:   48.752
+Evaluation (for feature selection): CV (leave one out) 
+Feature set: 4,6,18,22,28,31,36,37,41,43,49,102,103,105,110,113,114,117,118,120,126,127,129,135,145,150,164,1
+
+Time taken to build model: 53.86 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        3461               48.0028 %
+Incorrectly Classified Instances      3749               51.9972 %
+Kappa statistic                          0.1244
+Mean absolute error                      0.3255
+Root mean squared error                  0.4023
+Relative absolute error                 94.0027 %
+Root relative squared error             96.6954 %
+Total Number of Instances             7210     
+
+=== Detailed Accuracy By Class ===
+
+               TP Rate   FP Rate   Precision   Recall  F-Measure   ROC Area  Class
+                 0.908     0.772      0.495     0.908     0.64       0.655    positive
+                 0.162     0.031      0.533     0.162     0.248      0.645    negative
+                 0.01      0.01       0.208     0.01      0.019      0.589    neutral
+                 0.239     0.077      0.359     0.239     0.287      0.671    objective
+Weighted Avg.    0.48      0.37       0.419     0.48      0.383      0.642
+
+=== Confusion Matrix ===
+
+    a    b    c    d   <-- classified as
+ 2974   92   23  186 |    a = positive
+  987  208   12   80 |    b = negative
+ 1251   73   15  206 |    c = neutral
+  800   17   22  264 |    d = objective
+
