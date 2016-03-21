@@ -1,0 +1,855 @@
+1.000	?
+1.000   ?
+1.000   ?
+0.150   ?   sun
+0.150   ?   house
+-1,000	&-L	Makes Me Cry
+-1,000	(:-&	angry
+-1,000	(:-(	frowning
+-1,000	(:-...	Heart-broken
+-1,000	(;_;)	crying
+-1,000	(U)	Broken Heart
+-1,000	)-:	Left-handed Sad Face
+-1,000	):-(	Frowning Smiley With Hair
+-1,000	:'	crying
+-3,000	:((((	Angry
+-2,000	:(((	Angry
+-1,000	:(	Angry
+-1,000	:'(	Crying
+-2,000	:'-((	crying
+-1,000	:'-(	crying
+-1,000	:-(	Boo hoo
+-1,000	:(&	Disappointed
+-1,000	:((	Crying
+-1,000	:------------)	big liar
+-1,000	:*(	Crying
+-1,000	:..[	Crying
+-1,000	://	Frustrated
+-1,000	:@	Angry
+-1,000	:-@	Angry
+-3,000	:[[[	sad
+-2,000	:[[	sad
+-1,000	:[	sad
+-1,000	:_ (	Crying
+-1,000	:`-(	Crying
+-1,000	:-{	Angry
+-1,000	:|	Disappointed
+-1,000	:-|	Disappointed
+-1,000	:-||	Angry
+-1,000	:<	midget unsmiley
+-1,000	:-<	Frowning
+-1,000	:-t	Angry
+-1,000	:-Z	Angry Face
+-1,000	;_;	Crying
+-1,000	~:(	Mad
+-1,000	~:-(	Really Bummed Out
+-1,000	~X(	At Wits End
+-1,000	</3	Broken Heart
+-1,000	=(	Sad
+-1,000	='(	Crying
+-1,000	=((	Broken Heart
+-1,000	=/	Mad
+-1,000	=[	Sad
+-1,000	=\	Disappointed
+-1,000	=O ::::::	Crying
+-1,000	>,<	Mad
+-1,000	>:-(	angry
+-1,000	>:-<	Mad
+-1,000	><	Frustrated
+-1,000	>=(	Mad
+-1,000	>=[	Mad
+-1,000	b (	Angry
+-1,000	D:	Sad
+-1,000	O	Angry
+-1,000	QQ	Crying
+-1,000	T^T	Crying
+-1,000	T_T	Crying
+-1,000	T-T	Emo
+-1,000	X(	Angry
+-1,000	X-(	Angry
+-1,000	X[	Frustrated
+-0,900	%-|	Been Up All Night
+-0,900	&.(..	crying
+-0,900	D=	Sad
+-0,900	T.T	Sad
+-0,800	%+|	Beaten Up
+-0,800	(<_>)	sad
+-0,800	:+(	I’m Hurt By That
+-0,800	:c	Sad
+-0,800	Y_Y	Sad
+-0,750	( o_o)	Annoyed
+-0,750	(-_-* )	Annoyed
+-0,750	:^)	broken nose
+-0,750	:-=)	Adolph Hitler
+-0,750	??	Annoyed
+-0,750	@_@	Annoyed
+-0,750	DX	Disgusted
+-0,700	(:^(	broken nose
+-0,700	+-(	Shot Between The Eyes
+-0,600	(({..}))	Headache
+-0,600	(:)-)	likes to scuba dive
+-0,600	:-%	Get Lost
+-0,500	!-(	Black Eye
+-0,500	%-(	Broken Glasses
+-0,500	%-}	Dizzy
+-0,500	%+{	lost a fight
+-0,500	(:<)	blabber mouth
+-0,500	(:-D	blabber mouth
+-0,500	(_X_)	Kiss My Butt
+-0,500	(X^(*	Sour Face
+-0,500	/:(	Distraught
+-0,500	:-$	Confused
+-0,500	:/)	not funny
+-0,500	:->|	a cold
+-0,500	:-c	bummed out
+-0,500	:-M	Speak no Evil
+-0,500	:-W	speak with forked tongue
+-0,500	?-(	Black Eye
+-0,500	?_?	Irritated
+-0,500	=.=	Sour Face
+-0,500	b-(	Beat Up
+-0,500	L-)	Loser
+-0,500	o_o	Shocked
+-0,500	X P	Sour Face
+-0,400	#:-O	Oh No!
+-0,400	#:-o	Oh, nooooooo!
+-0,400	*SHOCKED*	Shocked
+-0,400	-.-	Stressed
+-0,400	:#	Swearing
+-0,400	:-&	Sick
+-0,400	:-(*)	Sick Comment
+-0,400	':-/	Skeptical Again
+-0,400	:-\	Hmmm
+-0,400	:-V	Shouting
+-0,400	:-Y	Side Comment
+-0,400	;-/	skeptical
+-0,400	=:-(	Punk Not Smiling
+-0,400	=+O()	Sick
+-0,400	=O	Shocked
+-0,300	#-o	Doh!
+-0,300	%*@:-(	Hung Over
+-0,300	%-\	hungover
+-0,300	(-.-)ZZZ	I’m Sleepy
+-0,300	(>.<)	Doh
+-0,300	._.	Inadequate
+-0,300	:$)	Donald Trump
+-0,300	:-`|	Have A Cold
+-0,300	:-6	exhausted, wiped out
+-0,300	:7/	Indecisive
+-0,300	:-SS	Nailbiting
+-0,300	@?@	Stunned
+-0,300	~~:-(	Getting Rained On
+-0,300	O.o	Confused
+-0,200	#;-)	I Have Tangled Hair
+-0,200	$_$	Greedy
+-0,200	%)	Confused
+-0,200	%-)	Confused
+-0,200	%7<	Irritated
+-0,200	((:-/	I Am Bald
+-0,200	(:-$	ill
+-0,200	(@_@)	Confused
+-0,200	*8-I	Nerd
+-0,200	*STOP*	Stop
+-0,200	:-!	Foot in Mouth
+-0,200	:-#	Do Not Tell Anyone
+-0,200	:-/	Confused
+-0,200	:-@!	Cursing
+-0,200	:{	Mustache
+-0,200	:~/	mixed up
+-0,200	:-8(	Condescending stare
+-0,200	:-Q	Confused
+-0,200	:s	Confused
+-0,200	:-s	after a BIZARRE comment
+-0,200	:-S	Confused
+-0,200	:-T	Pouting
+-0,200	;-,	Like, Duh
+-0,200	;-\	Popeye gets his lights punched out
+-0,200	`:-)	Sweating
+-0,200	|:-)	Heavy Eyebrows
+-0,200	<:-(	Dunce
+-0,200	<:I	Dunce
+-0,200	=;	Talk to the Hand
+-0,200	>;->	Lewd Remark
+-0,200	8-|	Nerd
+-0,150	(.!.)	Alien
+-0,150	(.V.)	Alien
+-0,150	(::( )::)	Band-Aid
+-0,150	(::[]::)	band-aide
+-0,150	(8>/--<	Alien
+-0,150	:%)%	acne
+-0,150	:-(=)	Bucktoothed
+-0,150	:-)))))))	A Person With Multiple Chins
+-0,150	:-E	Baring Teeth
+-0,150	:-O ZZ ZZ ZZ	Bored Or Tired
+-0,150	;-(	Chin Up
+-0,150	\-o	bored
+-0,150	~#:-(	Bad Hair Day
+-0,150	~~8-O	Bad-Hair Day
+-0,150	C:-|	Bald
+-0,150	l-o	bored
+-0,150	o >	Baring Teeth
+-0,150	OOOOOO	Alien
+-0,150	X:-)	bad hair day
+-0,100	(%)	Handcuffs
+-0,100	(*)?(*)	Looking
+-0,100	---(|||]==[]	Syringe
+-0,100	/:)	Raised Eyebrow
+-0,100	:-e	disappointed smiley
+-0,100	:-I	Hmm
+-0,100	-@--@-	Eyeglasses
+-0,100	~:-P	Single Hair
+-0,100	<:-)	Dumb Question
+-0,100	<_<	Looking
+-0,100	>_>	Looking
+-0,100	>>	Rolling Eyes
+-0,100	8-#	Death
+-0,100	9_9	Rolling Eyes
+-0,050	(_|_)	Butt
+0,000	8	Infinity
+0,000	---	Monkey
+0,000	 	Owl
+0,000	    /'	Surfer
+0,000	 (___)0	Rabbit
+0,000	--- :	Rat
+0,000	# -	Eyepatch
+0,000	#(,'%/)	Slept Too Long
+0,000	#)	Sleepy
+0,000	$-)	Sees Money
+0,000	$:-$	Stock Broker
+0,000	$:-)	Comb Stuck in the Hair
+0,000	$8()	Guy with a Toupee
+0,000	%%-	Four Leaf Clover
+0,000	%')	blotto
+0,000	%:O	Gorilla
+0,000	%\v	Picasso
+0,000	%-^	Picasso
+0,000	&&&&	pretzels
+0,000	&:-)	curly hair
+0,000	&:-/	Elvis, curly hair
+0,000	&:-o-8-<	Betty Boop
+0,000	&===3	Dog bone
+0,000	(	Bird
+0,000	( o ) ( o )	hooters
+0,000	(") (")	Bear
+0,000	(#-[	Marine
+0,000	(&)	Dog Face
+0,000	((	Banana
+0,000	()	Football
+0,000	(-)	needs a haircut
+0,000	(''')-.-(''')	Bear
+0,000	()_RED_(>	Red Crayon
+0,000	(*)/ (*)	Bicycle
+0,000	(//.^)	Emo
+0,000	(//_^)	Emo
+0,000	(-: =3	Chef
+0,000	(:)	Clam
+0,000	(:-)	Bald
+0,000	(-::-)	Siamese twins
+0,000	(::)<	Ladybug
+0,000	(:@@@@@@@@@@@@@@@D	catepillar (top view)
+0,000	(:-|K-	Dressed To Kill
+0,000	(:+)	big nose
+0,000	(:I	an egghead
+0,000	(:V	Pato
+0,000	(:V)	Pacman
+0,000	(_)	Pineapple
+0,000	(____)	Guitar
+0,000	(_8^(|)	Homer
+0,000	(_i_)	Mooning You
+0,000	({)	Left Hug
+0,000	(|)	Mooning You
+0,000	(||)	Bowl
+0,000	(~)	Filmstrip
+0,000	(+[ ]-:-)	PSP
+0,000	(<. . . . .	Pacman
+0,000	(>'.')>	Kirby
+0,000	(>.<) zzZ	Sleeping
+0,000	(8 {	John Lennon
+0,000	(8-(1)	Homer
+0,000	(8-{)}	Sunglasses, Mustache, Beard
+0,000	(ap)	Airplane
+0,000	(au)	Auto
+0,000	(b)	Beer Mug
+0,000	(bah)	Black Sheep
+0,000	(brb)	Be Right Back
+0,000	(c)	Coffee Cup
+0,000	(c:	silly nose
+0,000	(ci)	Cigarette
+0,000	(co)	Computer
+0,000	(d)	Martini Glass
+0,000	(e)	E-mail
+0,000	(g)	Gift with a Bow
+0,000	(h)	Hot
+0,000	(i)	Light Bulb
+0,000	(ip)	Island with a Palm Tree
+0,000	(li)	Lightning
+0,000	(m)	MSN Messenger
+0,000	(m)(m)(m)	M&Ms
+0,000	(mo)	Money
+0,000	(mp)	Mobile Phone
+0,000	(nah)	Goat
+0,000	(o)	Clock
+0,000	(o^-^o)	Pikachu
+0,000	(p ^^)=====O	Falcon Punch
+0,000	(p)	Camera
+0,000	(pi)	Pizza
+0,000	(pl)	Plate
+0,000	(s)	Sleeping Half-Moon
+0,000	(sn)	Snail
+0,000	(so)	Soccer Ball
+0,000	(st)	Stormy Cloud
+0,000	(z)	Boy
+0,000	*!#*!^*&:-)	schizophrenic
+0,000	*-(	Cyclops got poked in the eye
+0,000	*-*	Dazed
+0,000	****	popcorn
+0,000	*:-)	Navy Admiral
+0,000	*:*	Fuzzy Face
+0,000	*:o)	a Bozo
+0,000	*~*	Star Gazed
+0,000	*<:-)	Santa Claus
+0,000	*<|:-)	Santa Claus
+0,000	*<|:^) }	Santa Claus
+0,000	*<|:-{)}	Santa Claus
+0,000	*help	IM
+0,000	*red+u	IM
+0,000	*SURPRISED*	Surprised
+0,000	,:-)	Shaved Left Eyebrow
+0,000	./	Duck
+0,000	/ \	Stick Man
+0,000	/ | | |	Fighting
+0,000	/* *	Harry Potter Wand
+0,000	//_^	Emo
+0,000	//o-o\\	John Lennon
+0,000	/:-)	Sailor
+0,000	/\	Dinosaur
+0,000	/________|___|	Sword
+0,000	/8^{~	Sunglasses, Mustache, Goatee
+0,000	:-	male
+0,000	:-'	Has A Dimple
+0,000	':-?	one eyebrow raised
+0,000	: =	Beaver
+0,000	: 0=/--	Gag me
+0,000	:###)	Jimmy Durante
+0,000	:-#|	Bushy Mustache
+0,000	:%)	an accountant
+0,000	':-(	One Eyebrow
+0,000	:-( <|	Standing Firm
+0,000	:-($)	put your money where your mouth is
+0,000	:()	Lipstick
+0,000	:(:)	Pig
+0,000	:(?)	frog
+0,000	:-)--	100 pound weakling
+0,000	:---)	Pinnochio
+0,000	-:-)	has mohawk
+0,000	:-) ,	I Have An Outie Belly Button
+0,000	:-) .	I Have An Innie Belly Button
+0,000	:-) 8	Dolly Parton
+0,000	:-)-{8	a big girl
+0,000	:-)}	has goatee/beard
+0,000	:-)>	Goatee
+0,000	:-.)	Madonna
+0,000	:/i	no smoking
+0,000	:-:	mutant
+0,000	::=))	Seeing Double
+0,000	:?)	philosopher
+0,000	:@)	happy pig
+0,000	:-[	Despondent
+0,000	:-------[	Pinocchio
+0,000	:^o	Liar Liar
+0,000	:-`	spitting out chewingtobacco
+0,000	:-{ }	Talking
+0,000	:-{)	Moustache
+0,000	:-{)}	Moustache And Beard
+0,000	:-{)=	Mustache & Goatee
+0,000	:-{>	Goatee
+0,000	:-{0	Basic Mustache
+0,000	:-| :-|	Deja Vu
+0,000	:-}X	Bow Tie-Wearing
+0,000	:~	Elephant
+0,000	:=)	has two noses
+0,000	:=8)	Baboon
+0,000	:3-]	Dog
+0,000	:3-<	Dog
+0,000	:8)	Pig
+0,000	:8]	Gorilla
+0,000	:E	Monster
+0,000	:-i	Semi-Smiley
+0,000	:O	gasp
+0,000	:o	Surprised
+0,000	:-o	Alarmed
+0,000	:-O	Amazement
+0,000	:O$	Dog
+0,000	:o)	babe the pig
+0,000	:O/	Dog
+0,000	:O?	Dog
+0,000	:O\'	Dog
+0,000	:-R	Rasberry
+0,000	:v	Pacman
+0,000	:X	Lips are Sealed
+0,000	:-x	my lips are sealed Emoticon
+0,000	;~[	Prizefighter
+0,000	?$?:-)	I Am Rich!
+0,000	?-:	Left Handed Tongue Touching Nose
+0,000	?:-)	Fancy Hair
+0,000	?:^[]	Jim Carrey
+0,000	?:-_]	Old Lady
+0,000	@(^_^)@	monkey face
+0,000	@(-_-)@	Monkey
+0,000	@-)	Person submitting is Cyclops
+0,000	@:-)	John Travolta With ‘Grease’ Quiff
+0,000	@:-}	Just Back From Hairdresser
+0,000	@@@@:-)	Marge Simpson
+0,000	@@@@@:-)	Marge Simpson
+0,000	@=	Bomb
+0,000	@=)	Elvis
+0,000	@x	Snail
+0,000	[-(	Not talking
+0,000	[:-)	listening to Walkman radio
+0,000	[::::]	Pop-Tart
+0,000	[:]	Robot
+0,000	[:|]	a robot
+0,000	[:-}	DJ
+0,000	[_]	Horror
+0,000	[II]D	Frosty Mug
+0,000	[-x	Shame on You
+0,000	\$$$/	King
+0,000	\%%%/	Queen
+0,000	\&&&/	Princess
+0,000	\';./	Sea Horse
+0,000	\<><>/	Prince
+0,000	\m/ >_< \m/	Rocker
+0,000	\m/(**)\m/	Rocker
+0,000	\m/<(^_^)>\m/	Surprised
+0,000	\m/>.<\m/	Rocker
+0,000	\VVV/	King
+0,000	^,..,^	Fangs
+0,000	^^;	Anime Sweat Drop
+0,000	^o^	Mog
+0,000	^v^	Bat
+0,000	-_-;	Anime Sweat Drop
+0,000	{ 8{]	Mustache
+0,000	{:-)	Cowgirl
+0,000	-{:-]	Chinese Hat
+0,000	{:-{)}	Mustache And Beard
+0,000	{:o	Surprised
+0,000	{}	No Comment
+0,000	{}{	Fish
+0,000	|-)	asleep (boredom)
+0,000	|:-{)~	Old Man
+0,000	|:-0	No Explanation
+0,000	|_|	Cup
+0,000	|_|'	Anime Sweat Drop
+0,000	|_P	Cup of Coffee
+0,000	|-|	Going To Sleep
+0,000	----|}	Pie Being Thrown
+0,000	|-I	asleep
+0,000	|-O	Birth
+0,000	}-(((*>	Fish
+0,000	}:-(	bull headed
+0,000	}:-(=	Dracula
+0,000	}:^#)	Pointy Nosed
+0,000	}:8>	Spanish bull
+0,000	}---:o>	Reindeer
+0,000	}=D	Eyebrows
+0,000	~,~	Napping
+0,000	~:>	Chicken
+0,000	~~~~8}	Snake
+0,000	~<:-)	Princess
+0,000	~<>^>	Mouse
+0,000	~o)	Cup of Coffee
+0,000	~O~	Bird
+0,000	~O-O~	Mr. Magoo
+0,000	~oO>	Ice Cream Cone
+0,000	+-(:-)	Religious leader
+0,000	+/'\	Cowbell
+0,000	+O=-)	Pope
+0,000	<")))><	Fish
+0,000	<%)	Pizza
+0,000	<( '.' )>	Kirby
+0,000	<( '.' <)	Kirby
+0,000	<(((">	Shark
+0,000	<((((><	Fish
+0,000	<(*.*<)	Huggle
+0,000	<('.'<)	Kirby
+0,000	<(:?)	Big-Nosed Dunce
+0,000	<(^.^)>	Kirby
+0,000	<(-_-)>	robot
+0,000	<):)	Cowboy
+0,000	<):-)	Cowboy
+0,000	<*))))><	Fish
+0,000	<*_*>	Looking at You
+0,000	<.....	Pac-man
+0,000	<.{{{><	Fish
+0,000	<.< >.>	Looking Around
+0,000	<:^]	Person
+0,000	<:-0	Eeek!
+0,000	<:3 )~	Mouse
+0,000	<:3)~	Mouse
+0,000	<:3)~~	Mouse
+0,000	<:-I	another dunce
+0,000	<? ?>	Frog
+0,000	<@> <@>	Look at Me
+0,000	<[.,=.,]-	Dog
+0,000	<{::}>	Ladybug
+0,000	<|	Pizza
+0,000	<|-)=	chinese
+0,000	<~8)	Harry Potter
+0,000	<<<<(:	hat salesman
+0,000	<<<<(:-)	hat salesman
+0,000	<><	Fish
+0,000	<o?o>	Looking at You
+0,000	=:>)	rabbit
+0,000	=:7(~~	Rat
+0,000	=:7)~~	Rat
+0,000	=:-H	football player
+0,000	={D	Mustache
+0,000	=|:O}	Bill Clinton Smiley
+0,000	=====~	cigarette
+0,000	===O____iii	Bowling
+0,000	=8)	Pig
+0,000	>-	Female
+0,000	>:o===Q<	Giraffe
+0,000	>;-('	I Am Spitting Mad
+0,000	><(((">	Fish
+0,000	>O<	Harry Potter Snitch
+0,000	0-)	Cyclops
+0,000	0___	Bed
+0,000	0-<-<):	Skateboarder
+0,000	2:)	Elvis
+0,000	3:*>	Rudolph the reindeer
+0,000	3:[	mean pet smiley
+0,000	3:]	Pet Dog
+0,000	3:-O	Cow
+0,000	4:-)	George Washington
+0,000	5:-)	Elvis Presley
+0,000	7:)	Ronald Reagan
+0,000	7:-)	Fred Flintstone
+0,000	7:^]	Ronald Reagan
+0,000	8(:-)	Mickey Mouse
+0,000	8)	Dumb Person
+0,000	8)~~*	Frog
+0,000	8-*	just ate a hot pepper
+0,000	8*)	Glasses And A Half Mustache
+0,000	8:-)	Glasses on forehead
+0,000	8:]	gorilla
+0,000	8^	Chicken
+0,000	8<	Scissors
+0,000	8=:-)	Galloping Gourmet
+0,000	8==3	Dog Bone
+0,000	8==8	Seeing Eye to Eye
+0,000	8>	Penguin
+0,000	8->	Daydreaming
+0,000	8-o	Mr. Bill
+0,000	8-X	Skull
+0,000	B :-)	Sunglasses on top of head
+0,000	B:-)	sunglasses on head
+0,000	C(_)	Cup of Coffee
+0,000	C:-)	large brain capacity
+0,000	C|:-=	Charlie Chaplin
+0,000	C=:-)	Chef
+0,000	C8<]	Darth Vader
+0,000	C8o (	Chimp
+0,000	C8o )	Chimp
+0,000	C8o \	Chimp
+0,000	d:-)	baseball player
+0,000	d:-p	Baseball Player
+0,000	d[-_-]b	DJ
+0,000	d^_^b	DJ wearing head phones
+0,000	E-:-I	net.ham-radio
+0,000	G:-)	Football Helmet
+0,000	H-)	Cross-Eyed
+0,000	l-)	Asleep
+0,000	L.	Hockey Stick and Puck
+0,000	l_l)	mug
+0,000	l8r)	Later
+0,000	?O?	Mickey Mouse
+0,000	O-(	Cyclops
+0,000	o()~	Pig
+0,000	o-)	a cyclops
+0,000	o,..,o	Fangs
+0,000	o/	Golf Club and Ball
+0,000	o/<	Midget
+0,000	O[-<]:	I Am A Skater Or I Like To Skate
+0,000	O-\-<]:	Skateboarder
+0,000	o{-<]:	Skateboarder
+0,000	o|-<	Midget person
+0,000	o<[^(	Skater
+0,000	-o-o-	Glasses
+0,000	oO~	Mouse
+0,000	oxx:{}:::::::>	Sword
+0,000	P-(	Pirate
+0,000	P-)	Colonel Klink
+0,000	P=\\	Cap
+0,000	Q('.'Q)	Put Em Up
+0,000	Q(''q) Q(''Q)	Boxing
+0,000	q:-)	Baseball Catcher
+0,000	Q:-)	Catcher (baseball)
+0,000	Q:|	Davey Crockett
+0,000	u_u	Sleepy
+0,000	V.v.V	Crab
+0,000	X:-|	Bed Head
+0,000	X-p	Joking
+0,050	})i({	Butterfly
+0,050	}|{	Butterfly
+0,050	}i{	Butterfly
+0,100	!:-)	Scholar
+0,100	#:-)	Hair In A Mess
+0,100	(#)	Sunshine
+0,100	(*)	Star
+0,100	(/|\)	Peace
+0,100	(@)	Cat Face
+0,100	(^:^)	Halloween pumpkin
+0,100	(x)	Girl
+0,100	*<<<<+	Christmas Tree
+0,100	*<<<<=	Christmas Tree
+0,100	*DRINK*	Drink
+0,100	:-----)	long nose (Liar!)
+0,100	:)>-	Peace
+0,100	:-?	smiley smoking a pipe
+0,100	:3	Lip Smile
+0,100	:-7	Sarcastic
+0,100	@(*o*)@	Koala
+0,100	@)->-	Rose
+0,100	@-}----	rose
+0,100	@};-	Rose
+0,100	@};---	Rose
+0,100	@}->--	Rose
+0,100	@}>-'-,--	rose
+0,100	@~)~~~~	Rose
+0,100	@~'~~~	Rose
+0,100	@->--	rose
+0,100	@>;-----	rose, opening with leaves
+0,100	@>-;--	Rose
+0,100	[-o<	Praying
+0,100	\_/	drink
+0,100	\~/	full glass
+0,100	^o)	Sarcastic
+0,100	|-D	Ho ho
+0,100	}:-X	Cat
+0,100	~	Cat
+0,100	<{^-^}>	Chubby Face
+0,100	=^.^=	Cat
+0,100	=^w^=	Kitty
+0,100	=+=	Kitty
+0,100	>;3	Cat Winking
+0,100	>^,,^<	Cat
+0,100	>^..^<	Cat
+0,100	>'o'<	Cat
+0,100	8:^)	Girl
+0,100	E:-)	ham radio operator
+0,100	E-:-)	ham radio operator
+0,100	O/	Praise The Lord
+0,150	 U U 	Bunny
+0,150	:*) ?	Are You Drunk?
+0,150	:-{}	blowing a kiss
+0,150	@>--;--	A Rose
+0,150	~:0	Baby
+0,150	~:O	Baby
+0,150	~O><	Baby
+0,150	>:*)	Bozo the Clown
+0,150	B-)	Batman
+0,200	-6	Devil
+0,200	&;-P	Suave
+0,200	()}:o)	Devil
+0,200	(yn)	Fingers Crossed
+0,200	'-)	One-Eyed Smile
+0,200	?-)	One-Eyed Smile
+0,200	*JOKINGLY*	Jokingly
+0,200	.-)	one eye
+0,200	.-]	one eye
+0,200	:$	Embarrassed
+0,200	:*)O	Kool
+0,200	:0	Surprised
+0,200	:-0	Talkative
+0,200	:-9	delicious, yummy
+0,200	@>---	Flower
+0,200	]:->	Devil
+0,200	}:-)	Devil
+0,200	}=^{|~	Devil
+0,200	=^)	Open-minded
+0,200	=X	Oops
+0,200	>:)	Devil
+0,200	>:-)	Devil
+0,200	8-)	Eye-Rolling
+0,300	((((name))))	hug
+0,300	((()))	Hugs
+0,300	(*^_^*)	Shy
+0,300	(:)\/<	Hug
+0,300	(-_-)	secret smile
+0,300	(>..)>	Dancing
+0,300	*<|8-P~	Partying Too Much
+0,300	:)X	Hug
+0,300	:-})	Handlebar Mustache
+0,300	:-3	Handlebar Mustache
+0,300	\\:D/	Dancing
+0,300	^(. .)^	Dancing
+0,300	{ }	Hug
+0,300	<(..<)	Dancing
+0,300	<(^.^<)	Huge
+0,300	0|-)	Enjoying The Sun
+0,400	(.\|/.)	Evil Face
+0,400	(~};)	Grateful Dead
+0,400	(h5)	High Five
+0,400	)8-)	Scuba Smiley big-face
+0,400	,-)	one eye … and winking
+0,400	:)]	On the Phone
+0,400	:-]	biting sarcasm
+0,400	:->	biting sarcasm
+0,400	:>)	a big nose
+0,400	^5	high five
+0,400	>-)	Evil Grin
+0,500	#-)	Blinking
+0,500	(:-{~	Beard – Long
+0,500	(})	Right Hug
+0,500	(f)	Red Rose
+0,500	(k)	Red Lips
+0,500	(l)	Red Heart
+0,500	*<):O)	Clown
+0,500	*<:O)	Clown
+0,500	*DROOLING*	Drooling
+0,500	:)#	Beard
+0,500	:-). . .	drooler
+0,500	:-){	Beard
+0,500	:*)	Drinking Every Night
+0,500	:>	Devilish Grin
+0,500	:>)=	Beard
+0,500	:O)	Clown
+0,500	:-X	A big wet kiss
+0,500	\m/	Rocking
+0,500	\w/^^,\w/	Rocking
+0,500	^_^''	Pikachu
+0,500	}:->	devilish
+0,500	<]:o){	Clown
+0,500	<|:-()}	clown
+0,500	<|:^0|<	Clown
+0,500	=:-)	Funny Hair
+0,500	=P~	Drooling
+0,500	>:->	Devilish
+0,500	>=D	Revenge
+0,500	>-D	Rocking
+0,500	8-}	Silly
+0,500	D:-)	Hats Off To Your Great Idea
+0,600	(^o^)	Singing
+0,600	*<(8)~/~<	Partying
+0,600	*GIGGLING*	Giggling
+0,600	:-)~	drooling
+0,600	;-)	Flirty
+0,600	<:o)	Party
+0,600	<:-P	Party
+0,600	<l:0	Partying
+0,700	:-}	drunk
+0,700	;->	devilish wink
+0,750	:-)(-:	Married
+0,800	&:-]	Handsome
+0,800	:-,	Smirk
+0,800	:^,	Smirking
+0,800	:^D"	Great! I Like It!
+0,800	:-1	Smirk
+0,800	;^)	Smirking
+0,800	=))	Rolling on the floor laughing
+1,000	 :-)	happy
+1,000	%-	drunk with laughter
+1,000	%-(I)	laughing out loud
+1,000	%OD	Laughing Like Crazy
+1,000	( '}{' )	Kissing
+1,000	( '}~{' )	Kissing
+1,000	(()):**	hugs and kisses
+1,000	(*_*)	In Love
+1,000	(:-	Blank Expression
+1,000	(-:	Left Hand Smiley!
+1,000	(:-#	smiley with braces
+1,000	(:-*	kissing
+1,000	(^)	Birthday Cake
+1,000	(^_^)	smiley
+1,000	(}{)	Kissing
+1,000	(>^.^)> <3 <(^.^<)	Love
+1,000	(a)	Angel
+1,000	):-)	Smiley With Hair
+1,000	*	Kiss
+1,000	*\O/*	Cheerleader
+1,000	*<:)	Birthday Hat
+1,000	*IN LOVE*	In Love
+1,000	*KISSED*	Kissed
+1,000	*KISSING*	Kissing
+1,000	:")	Blush
+1,000	:-">	Blushing
+1,000	:#)	Drunk
+1,000	:)	smile
+1,000	:'-)	crying with joy
+1,000	:-)	Classic Smiley
+1,000	:-) :-) :-)	loud guffaw
+0,000	:)))	Laughing
+1,000	:))	Laughing
+1,000	:-))	Really Happy
+1,000	:)) 	big smile
+1,000	:-)*	Kiss
+1,000	:*	kisses
+1,000	:-*	Kiss
+1,000	:,')	Blushing
+1,000	:.-)	Laughing Tears
+1,000	:^J	Smiling
+1,000	:|)	Smile
+1,000	:}{:	Kisses
+1,000	:~)	drunk
+1,000	:-B	Drooling Out Of Both Sides Of Mouth
+0,000	:DD	Big Grin
+1,000	:D	Big Grin
+1,000	:d	Open-Mouthed Smile
+1,000	:-D	Big Grin
+1,000	:-d	Big Grin
+1,000	:D<	Hugs
+-2,000	:pp	Drooling
+-1,000	:PPP	Drooling
+0,000	:PP	Drooling
+1,000	:P	Drooling
+1,000	:p	Mischievous
+1,000	:-P	Drooling
+1,000	:-p	sticking their tongue out (at you!)
+1,000	:-P```	Drooling (sees food)
+1,000	:pd:	Kissing
+1,000	:pp	Sticking Tongue Out
+1,000	:-r	Sticking Tongue Out
+1,000	:x	Love Struck
+1,000	;-(!)	Kiss
+1,000	;)	Cheeky Wink
+1,000	;;)	Batting Eyelashes
+1,000	;-D	laughing
+1,000	[______]	Smile
+1,000	\o/	Cheer
+1,000	^&^	Smiling
+1,000	^.^	Happy
+1,000	^?^	Happy
+1,000	^^	Smiling
+1,000	^-^	Happy
+1,000	^_^	Overjoyed
+1,000	^j^	Angel
+1,000	`-`	blown away
+1,000	{{{***}}}	Hugs and Kisses
+1,000	|___|	Happy
+1,000	+:-)	Smiley priest
+1,000	<3	Heart
+1,000	<u3	Heart
+1,000	=	Kiss
+1,000	=)	Happy
+1,000	=:-#}	Smiley punk with a mustache….
+1,000	=D	Laughing out Loud
+1,000	=D>	Applause
+1,000	=o)	smile
+1,000	=P	Frustrated
+1,000	>:D<	Big Hug
+1,000	>:P	Sticking Tongue Out
+1,000	0*-)	Angel Wink – Female
+1,000	0:-)	angel
+1,000	0;-)	Angel Wink – Male
+1,000	0=)	Angel
+1,000	3:8)	happy cow
+1,000	C:	Smile
+1,000	g-)	Smiley with ponce-nez glasses
+1,000	O-)	Angel
+1,000	O:)	Angel
+1,000	O:-)	Angel
+1,000	o:-)	angelic
+1,000	U	Happy
+1,000	XD	Laughing
+1,000	XDD	Laughing
