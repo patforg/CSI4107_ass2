@@ -1,0 +1,59 @@
+#!/usr/local/bin/node
+
+var fs = require('fs');
+var request = require('request');
+var cheerio = require('cheerio');
+
+// build list of urls that already
+// have been retreived
+var urls = {};
+var data = fs.readFileSync(__dirname + '/../data/urlTitles.txt','utf-8');
+data.replace(/\r/g,'');
+data.split('\n').forEach(function(line){
+    if(line) {
+        var parts = line.split("\t");
+        urls[parts[0]] = true;
+    }
+});
+
+var titles = [];
+var data = fs.readFileSync(__dirname + '/../data/urls.txt','utf-8');
+data.replace(/\r/g,'');
+var lines = data.split('\n');
+var todoCount = lines.length;
+var trimChars = /[\r\n\t]/g;
+lines.forEach(function(url){
+    if (!url || urls.hasOwnProperty(url)) {
+        todoCount--;
+        if (todoCount == 0) {
+            done();
+        } //if
+        return;
+    } //if
+
+    request(url, function (error, response, html) {
+      if (!error && response.statusCode == 200) {
+        var $ = cheerio.load(html);
+        $('title').each(function(i, element){
+          var title = $(this).text().replace(trimChars,'');
+          titles.push(url +"\t" +title);
+        });
+      } else {
+          titles.push(url +"\t ");
+      }
+      
+      todoCount--;
+      if (todoCount == 0) {
+        done();
+      } //if
+    });
+});
+    
+function done () {
+    fs.appendFile(__dirname + '/../data/urlTitles.txt', titles.join("\n"), function (err) {
+
+        if (err) throw err;
+
+        console.log(titles.length +' titles written');
+    });
+}
