@@ -1,6 +1,11 @@
+# Classification Results
+Summary of classification results.
+
+Best so far is MainFeatures with Decision Table classifier
+
 ## BOW
 Used StringToWordVector filter to transform the sentence feature to a vector of words.
-Removed all other features.
+No other features were used.
 
 ### SMO Classifier
 Used standard settings
