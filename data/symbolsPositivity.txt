@@ -16,6 +16,7 @@
 -2,000	:(((	Angry
 -1,000	:(	Angry
 -1,000	:'(	Crying
+1,000	:')	Crying
 -2,000	:'-((	crying
 -1,000	:'-(	crying
 -1,000	:-(	Boo hoo
